@@ -11,5 +11,9 @@
 
 html,
 body {
-  @apply bg-background text-text w-screen h-screen;
+  @apply bg-background text-text w-screen h-screen underline-offset-4;
+}
+a {
+  /*aplica estilo aos links com hover para apareer o sublinhado e active para a opacidade com 50% e transition */
+  @apply hover:underline active:opacity-50 transition-opacity;
 }
