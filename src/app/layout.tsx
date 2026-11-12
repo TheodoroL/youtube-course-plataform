@@ -5,7 +5,7 @@ import "./globals.css";
 const nuito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CodarSe - Os melhores cursos de programação ",
+  title: "CodarSe - Os melhores cursos de programação  ",
   description:
     "Os melhores cursos de programação para você aprender a programar do zero e se tornar um desenvolvedor de sucesso.",
 };

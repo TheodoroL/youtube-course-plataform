@@ -1,8 +1,3 @@
 export default function Home() {
-  return (
-    <main>
-      <h1>dqqwwqd</h1>
-      Ola mundo
-    </main>
-  );
+  return <main className="bg-background">Ola mundo</main>;
 }
