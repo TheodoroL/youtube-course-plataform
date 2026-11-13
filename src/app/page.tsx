@@ -9,7 +9,12 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="bg-background">
-      <Card />
+      <Card
+        title="Curso de Next.js"
+        description="Aprenda a criar aplicações web modernas com Next.js"
+        imageUrl="https://i.ytimg.com/vi/XHrbg2iYNCg/hqdefault.jpg"
+        href="/cursos"
+      />
     </main>
   );
 }
