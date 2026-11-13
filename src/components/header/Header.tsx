@@ -16,7 +16,7 @@ export default function Header() {
     const timer = setTimeout(() => {
       setTitle(document.title);
       setDrawer(false);
-    }, 0);
+    }, 100);
 
     return () => {
       clearTimeout(timer);
