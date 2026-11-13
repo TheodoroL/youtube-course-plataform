@@ -1,4 +1,4 @@
-import { Card } from "@/components/card/Card";
+import { Section } from "@/components/section/Section";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,12 +9,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="bg-background">
-      <Card
-        title="Curso de Next.js"
-        description="Aprenda a criar aplicações web modernas com Next.js"
-        imageUrl="https://i.ytimg.com/vi/XHrbg2iYNCg/hqdefault.jpg"
-        href="/cursos"
-      />
+      <Section />
     </main>
   );
 }
