@@ -3,19 +3,22 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { MdOutlineOpenInNew } from "react-icons/md";
+import { MdMenu, MdOutlineOpenInNew } from "react-icons/md";
 
 export default function Header() {
   const currentPath = usePathname();
   return (
-    <nav className="flex items-center bg-primary justify-center py-4">
+    <nav className="flex items-center gap-6 bg-primary justify-start md:justify-center py-2 sm:py-4 px-6">
+      <button className="sm:hidden">
+        <MdMenu size={24} />
+      </button>
       <ul className="flex gap-4 items-center ">
         <li className="my-2">
           <Link href="/" className="border-2 rounded-md py-2 px-2 font-bold ">
             CODARSE
           </Link>
         </li>
-        <li>
+        <li className="hidden sm:block">
           <Link
             href="/"
             data-active={currentPath === "/"}
@@ -24,7 +27,7 @@ export default function Header() {
             Home
           </Link>
         </li>
-        <li>
+        <li className="hidden sm:block">
           <Link
             href="/cursos"
             data-active={currentPath === "/cursos"}
@@ -34,7 +37,7 @@ export default function Header() {
           </Link>
         </li>
 
-        <li>
+        <li className="hidden sm:block">
           <Link
             href="https://google.com"
             target="_blank"
@@ -45,6 +48,8 @@ export default function Header() {
           </Link>
         </li>
       </ul>
+
+      <h3 className="sm:hidden">CodarSe - Pagina Inicial</h3>
     </nav>
   );
 }
