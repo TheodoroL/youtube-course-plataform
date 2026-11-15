@@ -7,19 +7,25 @@ export const metadata: Metadata = {
 };
 const courses = [
   {
-    title: "Curso de Next.js",
+    title: "Curso de Next.js 1",
     description: "Aprenda a criar aplicações modernas com Next.js.",
     imageUrl: "https://i.ytimg.com/vi/XHrbg2iYNCg/hqdefault.jpg",
     href: "/cursos/nextjs",
   },
   {
-    title: "Curso de React",
+    title: "Curso de React 2",
     description: "Aprenda a criar interfaces de usuário modernas com React.",
     imageUrl: "https://i.ytimg.com/vi/XHrbg2iYNCg/hqdefault.jpg",
     href: "/cursos/react",
   },
   {
-    title: "Curso de TypeScript",
+    title: "Curso de TypeScript 3",
+    description: "Aprenda a usar TypeScript para aplicações robustas.",
+    imageUrl: "https://i.ytimg.com/vi/XHrbg2iYNCg/hqdefault.jpg",
+    href: "/cursos/typescript",
+  },
+  {
+    title: "Curso de TypeScript 4",
     description: "Aprenda a usar TypeScript para aplicações robustas.",
     imageUrl: "https://i.ytimg.com/vi/XHrbg2iYNCg/hqdefault.jpg",
     href: "/cursos/typescript",

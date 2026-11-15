@@ -29,8 +29,10 @@ export default function Home() {
   ];
 
   return (
-    <main className="bg-background">
-      <Section title="Veja mais cursos" variant="h-list" items={courses} />
+    <main className="mt-8 flex justify-center">
+      <div className="max-w-full min-[880px]:max-w-[880px]">
+        <Section title="Veja mais cursos" variant="h-list" items={courses} />
+      </div>
     </main>
   );
 }
