@@ -7,9 +7,30 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const courses = [
+    {
+      title: "Curso de Next.js",
+      description: "Aprenda a criar aplicações modernas com Next.js.",
+      imageUrl: "https://i.ytimg.com/vi/XHrbg2iYNCg/hqdefault.jpg",
+      href: "/cursos/nextjs",
+    },
+    {
+      title: "Curso de React",
+      description: "Aprenda a criar interfaces de usuário modernas com React.",
+      imageUrl: "https://i.ytimg.com/vi/XHrbg2iYNCg/hqdefault.jpg",
+      href: "/cursos/react",
+    },
+    {
+      title: "Curso de TypeScript",
+      description: "Aprenda a usar TypeScript para aplicações robustas.",
+      imageUrl: "https://i.ytimg.com/vi/XHrbg2iYNCg/hqdefault.jpg",
+      href: "/cursos/typescript",
+    },
+  ];
+
   return (
     <main className="bg-background">
-      <Section title="Veja mais cursos" variant="h-list" />
+      <Section title="Veja mais cursos" variant="h-list" items={courses} />
     </main>
   );
 }
