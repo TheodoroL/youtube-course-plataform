@@ -35,7 +35,7 @@ const courses = [
 export default function PageCursos() {
   return (
     <main className="mt-8 flex justify-center">
-      <div className=" min-[800px]:max-w-220">
+      <div className="w-full min-[800px]:max-w-220">
         <Section title="Todos os Cursos" variant="grid" items={courses} />
       </div>
     </main>

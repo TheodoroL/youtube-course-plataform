@@ -1,3 +1,4 @@
+import { CourseHeader } from "@/components/course-header/CourseHeader";
 import { Metadata } from "next";
 
 interface PageDetalhesCursoProps {
@@ -26,9 +27,12 @@ export default async function PageDetalhesCurso({
 }: PageDetalhesCursoProps) {
   const { id } = await params;
   return (
-    <>
-      <h1>Detalhes do Curso</h1>
-      <p>ID: {id}</p>
-    </>
+    <main className="mt-8 flex justify-center">
+      <div className=" w-full min-[800px]:max-w-220">
+        <h1>Detalhes do Curso</h1>
+        <p>ID: {id}</p>
+        <CourseHeader />
+      </div>
+    </main>
   );
 }

@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <main className="mt-8 flex justify-center">
-      <div className="max-w-full min-[880px]:max-w-[880px]">
+      <div className="w-full min-[880px]:max-w-220">
         <Section title="Veja mais cursos" variant="h-list" items={courses} />
       </div>
     </main>
