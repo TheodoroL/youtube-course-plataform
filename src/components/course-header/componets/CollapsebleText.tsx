@@ -19,7 +19,7 @@ export function CollapsebleText({
             "--number-of-lines": numberOfLinesWhenCollapsed,
           } as React.CSSProperties
         }
-        className={`data-[collapsed=true]:line-clamp-[var(--number-of-lines)]`}
+        className="data-[collapsed=true]:line-clamp-(--number-of-lines)"
       >
         {children}
       </p>
