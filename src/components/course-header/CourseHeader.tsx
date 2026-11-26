@@ -5,7 +5,7 @@ import { ContentCopy } from "./componets/ContentCopy";
 export function CourseHeader() {
   return (
     <section className="flex flex-col gap-2">
-      <h1 className="text-2xl font-extrabold">Detalhes do Curso</h1>
+      <h1 className="text-2xl font-extrabold">Curso de Next.js</h1>
 
       <CollapsebleText numberOfLinesWhenCollapsed={3}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit est placeat
