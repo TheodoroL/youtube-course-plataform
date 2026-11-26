@@ -1,4 +1,5 @@
 import { CourseHeader } from "@/components/course-header/CourseHeader";
+import { StartCourse } from "@/components/start-course/StartCourser";
 import { Metadata } from "next";
 
 interface PageDetalhesCursoProps {
@@ -28,9 +29,12 @@ export default async function PageDetalhesCurso({
   const { id } = await params;
   return (
     <main className="mt-8 flex justify-center">
-      <div className=" w-full min-[800px]:max-w-220">
-        <h1>Detalhes do Curso</h1>
-        <p>ID: {id}</p>
+      <div className=" w-full min-[800px]:max-w-220 flex flex-col gap-4">
+        <StartCourse
+          idCourse={id}
+          idClass="1"
+          urlImage="https://i.ytimg.com/vi/XHrbg2iYNCg/hqdefault.jpg"
+        />
         <CourseHeader />
       </div>
     </main>
